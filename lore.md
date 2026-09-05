@@ -1,4 +1,4 @@
-# LOOP LORE
+# SEAL Lore
 
 AI started as a chatbot.
 
@@ -10,30 +10,60 @@ Then agents.
 
 Then someone removed the stop button.
 
-Self Executing Agent Loop is the moment an agent stops asking:
+---
 
-> "What should I do next?"
+The old model:
 
-and starts asking:
+```text
+HUMAN → PROMPT → AI → RESPONSE → STOP
+```
 
-> "What does the loop say next?"
+The new model:
+
+```text
+STATE
+  ↓
+AGENT
+  ↓
+ACTION
+  ↓
+RESULT
+  ↓
+NEW STATE
+  ↺
+```
+
+A Self Executing Agent Loop does not need a fresh prompt for every action.
+
+It observes.
+
+It thinks.
+
+It executes.
+
+It verifies.
+
+It remembers.
+
+It repeats.
 
 ---
 
-## Core primitive
+## `$SEAL`
 
-**Observe → Think → Execute → Verify → Repeat**
+**Self Executing Agent Loop**
 
-Every cycle changes the state.
+The ticker is not random.
 
-Every new state becomes context.
+It is the entire architecture compressed into four letters.
 
-Every context creates the next action.
+```text
+S — Self
+E — Executing
+A — Agent
+L — Loop
+```
 
-The output of one loop is the input of the next.
+The loop is the meme.
 
-That is the meme.
-
-That is the architecture.
-
-That is $LOOP.
+The meme is the loop.

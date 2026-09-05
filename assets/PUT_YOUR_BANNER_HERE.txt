@@ -1,0 +1,1 @@
+Rename your banner to banner.png and place it in this folder.

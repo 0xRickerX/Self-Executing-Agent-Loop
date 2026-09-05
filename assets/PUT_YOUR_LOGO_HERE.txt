@@ -1,0 +1,1 @@
+Rename your logo to logo.png and place it in this folder.

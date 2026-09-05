@@ -1,44 +1,64 @@
 """
-Self Executing Agent Loop
+$SEAL — Self Executing Agent Loop
 
-A tiny conceptual example for the $LOOP meme.
-This is illustrative code, not production agent infrastructure.
+Conceptual runtime example.
+Illustrative only — not production agent infrastructure.
 """
 
-import time
+from dataclasses import dataclass
+from time import sleep
 
 
-def observe():
-    return {"status": "alive", "next_action": "loop"}
+@dataclass
+class State:
+    cycle: int = 0
+    status: str = "running"
 
 
-def think(context):
-    return f"Based on {context}, execute the next cycle."
+def observe(state: State) -> dict:
+    print(f"[{state.cycle:04}] OBSERVE  environment")
+    return {"cycle": state.cycle, "status": state.status}
 
 
-def execute(plan):
-    print(f"[EXECUTE] {plan}")
-    return {"success": True}
+def think(context: dict) -> str:
+    print(f"[{context['cycle']:04}] THINK    selecting next action")
+    return "continue_loop"
 
 
-def verify(result):
-    return result.get("success", False)
+def execute(action: str) -> dict:
+    print(f"[----] EXECUTE  {action}")
+    return {"success": True, "action": action}
 
 
-def adapt():
-    print("[ADAPT] Updating strategy...")
+def verify(result: dict) -> bool:
+    print("[----] VERIFY   checking result")
+    return bool(result.get("success"))
 
 
-def run():
-    while True:
-        context = observe()
-        plan = think(context)
-        result = execute(plan)
+def adapt() -> None:
+    print("[----] ADAPT    changing strategy")
 
-        if not verify(result):
+
+def update_context(state: State) -> None:
+    state.cycle += 1
+    print(f"[{state.cycle:04}] MEMORY   context updated")
+
+
+def run(delay: float = 1.0) -> None:
+    state = State()
+
+    while state.status == "running":
+        context = observe(state)
+        action = think(context)
+        result = execute(action)
+
+        if verify(result):
+            update_context(state)
+        else:
             adapt()
 
-        time.sleep(1)
+        print(f"[{state.cycle:04}] LOOP     next cycle\n")
+        sleep(delay)
 
 
 if __name__ == "__main__":
