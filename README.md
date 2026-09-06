@@ -8,7 +8,7 @@
 
 # Self Executing Agent Loop
 
-### `$SEAL`
+### `$TBA`
 
 **Observe → Think → Execute → Verify → Repeat**
 
@@ -25,9 +25,9 @@ It runs the loop.
 
 ---
 
-## What is SEAL?
 
-**SEAL = Self Executing Agent Loop.**
+
+** = Self Executing Agent Loop.**
 
 The first generation of AI waited for a prompt.
 
