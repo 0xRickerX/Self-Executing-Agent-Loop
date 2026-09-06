@@ -17,7 +17,7 @@ An autonomous agent that does not wait for the next prompt.
 It runs the loop.
 
 [![X](https://img.shields.io/badge/X-@0xRicker-black?logo=x)](https://x.com/0xRicker)
-![Ticker](https://img.shields.io/badge/Ticker-%24SEAL-black)
+![Ticker]
 ![Status](https://img.shields.io/badge/Contract-TBA-black)
 ![Loop](https://img.shields.io/badge/Loop-Running-black)
 
