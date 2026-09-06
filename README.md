@@ -4,11 +4,9 @@
 
 <br>
 
-<img src="./assets/logo.png" alt="SEAL logo" width="140">
+<img src="./assets/logo.png" alt="Self Executing Agent Loop logo" width="140">
 
 # Self Executing Agent Loop
-
-### `$TBA`
 
 **Observe → Think → Execute → Verify → Repeat**
 
@@ -17,17 +15,14 @@ An autonomous agent that does not wait for the next prompt.
 It runs the loop.
 
 [![X](https://img.shields.io/badge/X-@0xRicker-black?logo=x)](https://x.com/0xRicker)
-![Ticker]
-![Status](https://img.shields.io/badge/Contract-TBA-black)
+![Contract](https://img.shields.io/badge/Contract-TBA-black)
 ![Loop](https://img.shields.io/badge/Loop-Running-black)
 
 </div>
 
 ---
 
-
-
-** = Self Executing Agent Loop.**
+## What is Self Executing Agent Loop?
 
 The first generation of AI waited for a prompt.
 
@@ -98,21 +93,6 @@ while True:
 
 ---
 
-## Why `$SEAL`?
-
-```text
-S — Self
-E — Executing
-A — Agent
-L — Loop
-```
-
-The ticker is the architecture.
-
-The architecture is the meme.
-
----
-
 ## Architecture
 
 ```mermaid
@@ -131,12 +111,11 @@ More detail: [ARCHITECTURE.md](./ARCHITECTURE.md)
 
 ---
 
-## Token
+## Project Status
 
 | Field | Value |
 |---|---|
-| Name | Self Executing Agent Loop |
-| Ticker | `$SEAL` |
+| Project | Self Executing Agent Loop |
 | Contract | `TBA` |
 | Chain | `TBA` |
 | Launch | `TBA` |
@@ -146,7 +125,7 @@ More detail: [ARCHITECTURE.md](./ARCHITECTURE.md)
 
 ---
 
-## The SEAL Manifesto
+## The Manifesto
 
 ```text
 PROMPTS ARE MANUAL.
@@ -189,17 +168,11 @@ BECOME THE NEXT PROMPT.
 
 ```text
 PHASE 01  [✓] DEFINE THE LOOP
-PHASE 02  [✓] INITIALIZE $SEAL
-PHASE 03  [ ] DEPLOY CONTRACT
+PHASE 02  [✓] BUILD THE INITIAL SYSTEM
+PHASE 03  [ ] EXPAND THE ARCHITECTURE
 PHASE 04  [ ] START THE PUBLIC LOOP
-PHASE 05  [ ] LET THE INTERNET DECIDE
+PHASE 05  [ ] KEEP ITERATING
 ```
-
-No fake utility roadmap.
-
-No corporate milestones.
-
-Just the loop.
 
 ---
 
@@ -214,7 +187,6 @@ Self-Executing-Agent-Loop/
 ├── ARCHITECTURE.md
 ├── lore.md
 ├── loop.py
-├── token.json
 ├── LICENSE
 └── .gitignore
 ```
@@ -226,13 +198,12 @@ Self-Executing-Agent-Loop/
 - **X:** [@0xRicker](https://x.com/0xRicker)
 - **Contract:** `TBA`
 - **Website:** `TBA`
-- **Chart:** `TBA`
 
 ---
 
 ## Disclaimer
 
-`$SEAL` is an internet culture / memecoin project inspired by autonomous agent loops.
+Self Executing Agent Loop is an experimental project inspired by autonomous agent architectures.
 
 Nothing in this repository is financial advice, a promise of returns, or a guarantee of future value, functionality, or utility.
 
